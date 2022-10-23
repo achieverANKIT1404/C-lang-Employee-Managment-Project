@@ -1,6 +1,6 @@
-# C-lang-Employee-Managment-Project
+# C-lang-Employee-Managment-Project👨‍💼
 <pre>
-These is the project of employee managment its helps to manage the employee data to the company.
+These is the project of employee managment its helps to manage the employee data to the company.👨‍💼🏢
 
  EMPLOYEE MANAGMENT SYSTEM
              OF
@@ -162,4 +162,34 @@ These is the project of employee managment its helps to manage the employee data
 
                 CHOSE WHICH YOU WANT TO UPDATE = 0
                 CLEAR
+                
+ ********MENU********
+    1] ADD DETAILS
+    2] SEARCH DETAILS                                  
+    3] SHOW DETAILS                                   
+    4] UPDATE DETAILS                                  
+    5] TAX ON SALARY DETAILS                                  
+    0] CLEAR/EXIT 
+    
+                ENTER WHAT YOU DO = 5
 
+                ^^^^^^^^^^::TAX ON SALARY DETAILS::^^^^^^^^^^
+                ENTER ID = 5672
+
+
+                AMAN MOTGHARE
+
+                SALARY = 55000.00 Rs/-
+
+                TAX = 13750.00 Rs/-
+
+ ********MENU********
+    1] ADD DETAILS
+    2] SEARCH DETAILS                                  
+    3] SHOW DETAILS                                   
+    4] UPDATE DETAILS                                  
+    5] TAX ON SALARY DETAILS                                  
+    0] CLEAR/EXIT 
+    
+                ENTER WHAT YOU DO = 0
+                CLEAR/EXIT
