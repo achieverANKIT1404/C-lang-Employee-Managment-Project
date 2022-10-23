@@ -1,0 +1,136 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<conio.h>
+
+struct emp
+{
+    char fName[20];
+    char lName[20];
+    char place[35];
+    int id,age;
+    float sal;
+};
+
+int i,n,id1;
+struct emp e[100];
+
+void add()
+{
+    for(i=0;i<n;i++)
+    {
+         printf("\n");
+         printf("\t\tENTER EMPLOYEE %d DETAILS\n",i+1);
+         printf("\n");
+         printf("\t\tENTER ID = ",i+1);
+         scanf("%d",&e[i].id);
+         printf("\n");
+         printf("\t\tENTER FIRST NAME = ",i+1);
+         scanf("%s",&e[i].fName);
+         printf("\n");
+         printf("\t\tENTER LAST NAME = ",i+1);
+         scanf("%s",&e[i].lName);
+         printf("\n");
+         printf("\t\tENTER AGE = ",i+1);
+         scanf("%d",&e[i].age);
+         printf("\n");
+         printf("\t\tENTER PLACE = ",i+1);
+         scanf("%s",&e[i].place);
+         printf("\n");
+         printf("\t\tENTER SALARY = ",i+1);
+         scanf("%f",&e[i].sal);
+    }
+}
+void search()
+{
+    printf("\t\tENTER ID = ");
+    scanf("%d",&id1);
+    for(i=0;i<n;i++)
+    {
+        if(id1==e[i].id)
+        {
+            printf("\t\tNAME:\t\t%s  %s\n",e[i].fName,e[i].lName);
+            printf("\n");
+            printf("\t\tID:\t\t%d\n",e[i].id);
+            printf("\n");
+            printf("\t\tAGE:\t\t%d\n",e[i].age);
+            printf("\n");
+            printf("\t\tPLACE:\t\t%s\n",e[i].place);
+            printf("\n");
+            printf("\t\tSALARY:\t\t%f\n",e[i].sal);
+        }
+        else
+        {
+            printf("\t\tID NOT MATCH..!\n");
+        }
+    }
+}
+void show()
+{
+    printf("\t\tNAME\n\t\tID\n\t\tAGE\n\t\tPLACE\n\t\tSALARY\n");
+    for(i=0;i<n;i++)
+    {
+        printf("\t\t%s %s\n\t\t%d\n\t\t%d\n\t\t%s\n\t\t%f\n",e[i].fName,e[i].lName,e[i].id,e[i].age,e[i].place,e[i].sal);
+    }
+}
+int main()
+{
+    int choice;
+    i=1;
+    printf("\n");
+    printf("\t\t\t\t\tEMPLOYEE MANAGMENT SYSTEM\n\t\t\t\t\t\tOF\n");
+    printf("\t\t\t\t     ^^^^^^^^INFOSYS COMPANY^^^^^^^^\n");
+    printf("\n");
+    printf("\t\t\t\t\t ********MENU********\n");
+    printf("\t\t\t\t\t 1] ADD DETAILS\n");
+    printf("\t\t\t\t\t 2] SEARCH DETAILS\n");
+    printf("\t\t\t\t\t 3] SHOW DETAILS\n");
+    printf("\t\t\t\t\t 4] UPDATE DETAILS\n");
+    printf("\t\t\t\t\t 0] CLEAR/EXIT\n");
+    getch();
+
+    while(i)
+    {
+        if(choice!=0)
+        {
+            printf("\n");
+            printf("\t\t\t\t\tEMPLOYEE MANAGMENT SYSTEM\n\t\t\t\t\t\tOF\n");
+            printf("\t\t\t\t     ^^^^^^^^INFOSYS COMPANY^^^^^^^^\n");
+            printf("\n");
+            printf("\t\t\t\t\t ********MENU********\n");
+            printf("\t\t\t\t\t 1] ADD DETAILS\n");
+            printf("\t\t\t\t\t 2] SEARCH DETAILS\n");
+            printf("\t\t\t\t\t 3] SHOW DETAILS\n");
+            printf("\t\t\t\t\t 4] UPDATE DETAILS\n");
+            printf("\t\t\t\t\t 0] CLEAR/EXIT\n");
+        }
+
+        printf("\n");
+        printf("\t\tENTER WHAT YOU DO = ");
+        scanf("%d",&choice);
+
+        switch(choice)
+        {
+            case 1:
+            printf("\n");
+            printf("\t\tENTER NUMBER OF EMPLOYEES =");
+            scanf("%d",&n);
+            printf("\n");
+            printf("\t\t^^^^^^^^^^::ADD DETAILS::^^^^^^^^^^\n");
+            add();
+            break;
+
+            case 2:
+            printf("\n");
+            printf("\t\t^^^^^^^^^^::SEARCH DETAILS::^^^^^^^^^^\n");
+            search();
+            break;
+
+            case 3:
+            printf("\n");
+            printf("\t\t^^^^^^^^^^::SHOW DETAILS::^^^^^^^^^^\n");
+            show();
+            break;
+        }
+    }
+    return 0;
+}

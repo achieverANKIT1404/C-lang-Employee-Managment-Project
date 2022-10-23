@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1660294101 source:d:\cproject\emp_project\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+
+1660294101 source:d:\c\emp_project\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+
+1662638099 source:d:\c\day9 file handling\emp_project\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+
