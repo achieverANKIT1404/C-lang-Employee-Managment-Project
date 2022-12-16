@@ -4,7 +4,7 @@ These is the project of employee managment its helps to manage the employee data
 
  EMPLOYEE MANAGMENT SYSTEM
              OF
- ^^^^^^^^INFOSYS COMPANY^^^^^^^^
+ ^^^^^^^^INFOSYS COMPANY^^^^^^^
 
    ********MENU********
       1] ADD DETAILS
